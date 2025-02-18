@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Noto Sans KR", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ol,ul,li{
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url('https://img.79plus.co.kr/megahp/manager/upload/main/20250115200615_1736939175520_6b8fC2lVuR.jpg?ver=202207071306') no-repeat center/contain;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#header-logo{
+    width: 200px;
+    height: 104px;
+    margin: 0 0 0 150px;
+}
+
+#header:hover{
+    background: white;
+}
+
+#header-logo> a{
+    border: none;
+}
+
+
+#header-logo> a> img{
+    width:100%;
+    height:100%;
+}
+
+#header-nav{
+    width: 50%;
+    margin: 0 0 0 100px;
+}
+
+#header-nav>ul{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height:106px;
+}
+
+#header-nav>ul>li>a{
+    font-weight: 700;
+}
+
+#header-nav>ul:hover{
+    background: #fdd000;
+}
+
+#header-nav>ul>li{
+    flex: 1;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-nav>ul>li ul{
+    position: absolute;
+    top: 62px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 0;
+    display: none;
+}
+
+#header-nav>ul>li>ul li{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+#header-nav>ul li a:hover +ul{
+    display: block;
+    background: #fdd000;
+}
+
+#header-nav > ul li ul li a:hover {
+    text-decoration: underline;
+}
+
+#header-nav>ul li ul:hover{
+    display: block;
+    background: #fdd000;
+}
+
+#header-link{
+    position: absolute;
+    right: 200px;
+}
+
+#header-link > a> img{
+    width: 50px;
+    height: 100%; 
+}
+
+#main{
+    height: calc(100%-104px);
+    width: 100%;
+}
+
+#main-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 120px;
+    padding-top: 100px;
+}
+
+#main-nav> div{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#main-nav> div> a{
+    position: absolute;
+    top: 27px;
+    left: 15px;
+    color: white;
+    font-size: 15px;
+    margin: 1px;
+}
+
+#main-nav> div:nth-child(1) a{
+    color: #fdd000;
+}
+
+#main-nav> div:hover{
+    background-color: #fdd000;
+}
+
+#main-nav> div:hover a{
+    color: black;
+}
